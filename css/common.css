@@ -1,5 +1,5 @@
 :root {
-
+    --bg-main: #eee;
 }
 
 html, body {
@@ -10,4 +10,5 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-main);
 }

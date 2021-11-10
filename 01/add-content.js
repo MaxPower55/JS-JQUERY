@@ -13,5 +13,5 @@ if (hourNow > 18) {
     outputDate = "Утро";
 }
 
-document.write('<h3>' + outputDate + '</h3');
+document.write('<h3>' + outputDate + '</h3>' + '<br>');
 document.write('<h2>' + hourNow + ':' + minuteNow + '</h2');
