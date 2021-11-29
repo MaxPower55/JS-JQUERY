@@ -10,9 +10,19 @@
 <body class="container">
 <div>
 
-    <div id="output"></div>
+<div class="wrapper__buttons">
+    <button class="button" onclick="addFirst()">Добавить в начало</button>
+    <button class="button" onclick="remFirst()">Удалить из начало</button>
+    <button class="button" onclick="addLast()">Добавить в конец</button>
+    <button class="button" onclick="remLast()">Удалить из конец</button>
+    <button class="button" onclick="bgGr()">Изменить фон на зеленый</button>
+    <button class="button" onclick="bgOr()">Изменить фон на оранжевый</button>
+    <p class="text">Количество элементов в списке: <span id="listNum"></span></p>
+</div>
+
+<ul class="list" id="list"><li class="list__item" id="item">Первый элемент</li><li class="list__item" id="item">Второй элемент</li><li class="list__item" id="item">Третий элемент</li><li class="list__item" id="item">Четвертый элемент</li></ul>
 
 </div>
-<script src="04/example.js"></script>
+<script src="05/example.js"></script>
 </body>
 </html>
