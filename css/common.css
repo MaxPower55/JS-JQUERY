@@ -1,26 +1,37 @@
 :root {
     --bg-main: #eee;
 }
-
-html, body {
-    height: 100%;
-    overflow-y: hidden;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html, body {
+    padding: 1em;
     background-color: var(--bg-main);
 }
-
-.wrapper__buttons {
-    position: fixed;
-    top: 2em;
-    left: 2em;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vw;
+}
+.component {
+    padding: 1em;
+    border: 1px solid black;
+    position: relative;
+}
+.component__title {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: smaller;
+    user-select: none;
 }
 
-.button {
+/* СТИЛИ ДЛЯ ГЛАВЫ 5 */
+
+/* .button {
     margin: 4px;
     display: block;
     font-size: 8px;
@@ -53,4 +64,59 @@ html, body {
 
 .list__item-green {
     background: forestgreen;
+} */
+
+/* СТИЛИ ДЛЯ ГЛАВЫ 6 */
+
+.text {
+    position: relative;
+}
+
+.form__text {
+    outline: none !important;
+    border: none;
+    outline-offset: none;
+    box-shadow: none;
+    position: relative;
+}
+
+.text__label {
+    position: absolute;
+    width: 270px;
+    left: 0.5em;
+    bottom: -2.2em;
+    background-color:cornsilk;
+    padding: 0.2em 1em;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+.text__label-hide {
+    opacity: 0;
+}
+
+.complete {
+    list-style: none;
+}
+
+/* form.js */
+
+.form__choose {
+    display: inline-block;
+}
+.form__select {
+    display: inline-block;
+}
+.form__submit {
+    margin-top: 1em;
+}
+
+/* mutation.js */
+
+.mutation__ul {
+    margin-left: 2em;
+    line-height: 1.4em;
 }

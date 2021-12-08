@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <title>JS & jQuery</title>
+</head>
+<body id="body">
+
+<div class="container">
+
+    <div class="component">
+        <h3 class="component__title">event-delegation.js</h3>
+        <form>
+            <label class="text">
+                <input type="text" id="text" class="text__input">
+                <span class="text__label" id="pass"></span>
+            </label>
+            
+            <input type="password" class="form__text">
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title">point-coord.js</h3>
+        <form>
+            <ul id="shoppingList" class="ul">
+                <li class="complete" id="li1">screen X <span id="sx"></span></li>
+                <li class="complete" id="li2">screen Y <span id="sy"></span></li>
+                <li class="complete" id="li3">page X <span id="px"></span></li>
+                <li class="complete" id="li4">page Y <span id="py"></span></li>
+                <li class="complete" id="li5">client X <span id="cx"></span></li>
+                <li class="complete" id="li6">client Y <span id="cy"></span></li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title">form.js</h3>
+        <form id="formSubmit">
+            <p class="form__choose">Выберите план: </p>
+            <select id="selectPackage" class="form__select">
+                <option>1 год</option>
+                <option>6 месяцев</option>
+                <option>3 месяца</option>
+                <option>1 месяц</option>
+            </select>
+            <p class="choose__tip" id="choose__tip">. </p>
+            <label><input type="checkbox" id="checkbox">Принимаю условия соглашения</label>
+            <p class="checkbox__tip" id="checkbox__tip"></p>
+            <button type="button" id="formSignup" class="form__submit">NEXT</button>
+        </form>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title">mutation.js</h3>
+        <span>Счётчик элементов li </span><span id="itemCount"></span>
+        <ul class="mutation__ul" id="mutationUl">
+            <li>первый элемент</li>
+            <li>второй элемент</li>
+            <li>третий элемент</li>
+            <li>четвертый элемент</li>
+        </ul>
+        <button type="button" id="mutationButton">Добавить в список</button>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title">html5-events.js</h3>
+        <span id="message">Lorem, ipsum.</span>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title">example.js</h3>
+        <p id="noteName"></p>
+        <input type="text" id="userName" placeholder="введите имя">
+        <input type="text" id="noteInput" placeholder="введите название заметки">
+        <button type="button" id="recorderControl">Запись</button>
+    </div>
+
+
+</div>
+
+<script src="06/position.js"></script>
+<script src="06/form.js"></script>
+<script src="06/mutation.js"></script>
+<script src="06/example.js"></script>
+</body>
+</html>
