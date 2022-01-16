@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <title>JS & jQuery</title>
+</head>
+<body id="body">
+
+<div class="container">
+
+    <!-- <div class="component">
+        <h3 class="component__title" style="background: #008b8b;">attributes.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item list__item-hot"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function attr()" class="button" id="button">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background: #556b2f;">css.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function action()" class="button" id="listAction">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background: #e9967a;">each.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function each()" class="button" id="eachButton">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background: #00388b;">events.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function events()" class="button" id="eventsButton">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background: #8b6b00;">event-object.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function eventObject()" class="button" id="eventObjectButton">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:darkorange;">event-delegation.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function eventDelegation()" class="button" id="eventDelegation">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:green;">animate.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function animate()" class="button" id="animate">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:steelblue;">traversing.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot">Третий элемент</li>
+            <li id="four" class="list__item list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function traversing()" class="button" id="traversing">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:deeppink;">filters.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item list__item-hot list__item-fav"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot list__item-fav">Второй элемент</li>
+            <li id="three" class="list__item list__item-hot list__item-fav">Третий элемент</li>
+            <li id="four" class="list__item list__item-hot list__item-fav">Четвертый элемент</li>
+            <li id="five" class="list__item list__item-hot list__item-fav">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function filters()" class="button" id="filtr">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:deeppink;">index-number.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item">Третий элемент</li>
+            <li id="four" class="list__item list__item-hot">Четвертый элемент</li>
+            <li id="five" class="list__item">Пятый элемент</li>
+        </ul>
+        <input type="button" value="function index-number()" class="button" id="index-number">
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:deeppink;">form.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item list__item-fav"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item list__item-hot">Второй элемент</li>
+            <li id="three" class="list__item">Третий элемент</li>
+            <li id="four" class="list__item">Четвертый элемент</li>
+            <li id="five" class="list__item">Пятый элемент</li>
+        </ul>
+        <input type="button" value="New element" class="button buttonMain" id="showForm">
+        <form id="newItemForm">
+            <input type="text" class="newText" id="itemDescr" placeholder="Введите описание">
+            <input type="submit" value="Add" class="button" id="addButton">
+        </form>
+    </div>
+
+    <div class="component">
+        <h3 class="component__title" style="background:deeppink;">cut-copy-paste.js</h3>
+        <p class="component__parag">Lorem ipsum dolor sit amet.</p>
+        <p class="component__parag">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="component__parag">Lorem, ipsum dolor.</p>
+        <p class="component__parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.</p>
+        <p class="component__parag">Lorem, ipsum.</p>
+        <input type="button" value="cut-copy-paste" class="button buttonMain" id="cut-copy-paste">
+    </div>
+
+    <div class="component" id="compDim">
+        <h3 class="component__title" style="background:deeppink;">dimensions.js</h3>
+        <input type="button" value="dimensions" class="button buttonMain" id="dimensions">
+    </div> -->
+
+    <div class="component">
+        <h3 class="component__title" style="background:deeppink;">form.js</h3>
+        <ul class="list">
+            <li id="one" class="list__item"><em>Первый</em> элемент</li>
+            <li id="two" class="list__item">Второй элемент</li>
+            <li id="three" class="list__item">Третий элемент</li>
+            <li id="four" class="list__item">Четвертый элемент</li>
+            <li id="five" class="list__item">Пятый элемент</li>
+        </ul>
+        <input type="button" value="New element" class="button buttonMain" id="showForm">
+        <form id="newItemForm">
+            <input type="text" class="newText" id="itemDescr" placeholder="Введите описание">
+            <input type="submit" value="Add" class="button" id="addButton">
+        </form>
+    </div>
+
+
+</div>
+
+<script src="node_modules\jquery\dist\jquery.js"></script>
+<!-- <script src="07\changing-content.js"></script> -->
+<!-- <script src="07\adding-new-content.js"></script> -->
+<!-- <script src="07\attributes.js"></script> -->
+<!-- <script src="07\css.js"></script> -->
+<!-- <script src="07\each.js"></script> -->
+<!-- <script src="07\events.js"></script> -->
+<!-- <script src="07\event-object.js"></script> -->
+<!-- <script src="07\event-delegation.js"></script> -->
+<!-- <script src="07\effects.js"></script> -->
+<!-- <script src="07\animate.js"></script> -->
+<!-- <script src="07\traversing.js"></script> -->
+<!-- <script src="07\filters.js"></script> -->
+<!-- <script src="07\index-number.js"></script> -->
+<!-- <script src="07\form.js"></script> -->
+<!-- <script src="07\cut-copy-paste.js"></script> -->
+<!-- <script src="07\dimensions.js"></script> -->
+<script src="07\example.js"></script>
+
+
+</body>
+</html>

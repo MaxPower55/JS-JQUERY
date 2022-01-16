@@ -1,32 +1,50 @@
-:root {
-    --bg-main: #eee;
-}
 * {
     margin: 0;
     padding: 0;
 }
 html, body {
     padding: 1em;
-    background-color: var(--bg-main);
+    background: linear-gradient(90deg, rgb(44, 95, 189), rgba(140, 247, 255, 0.76));
+    /* height: 100%; */
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3vw;
 }
 .component {
-    padding: 1em;
-    border: 1px solid black;
     position: relative;
+    min-height: 450px;
+    min-width: 350px;
+    background-color: rgb(255, 247, 214);
+    
+}
+.component:after {
+    content: '';
+    position: absolute;
+    top: 0.6em;
+    right: 0.7em;
+    width: 2em;
+    height: 2em;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829 2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757 9.172l1.415-1.415L12 10.586z' fill='white'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .component__title {
-    position: absolute;
-    top: 0.5em;
-    right: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: smaller;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 1px black;
     user-select: none;
+    width: 100%;
+    line-height: 3em;
+    text-align: center;
+}
+.c__bg {
+    background-color: chartreuse;
 }
 
 /* СТИЛИ ДЛЯ ГЛАВЫ 5 */
@@ -68,7 +86,7 @@ html, body {
 
 /* СТИЛИ ДЛЯ ГЛАВЫ 6 */
 
-.text {
+/* .text {
     position: relative;
 }
 
@@ -100,11 +118,11 @@ html, body {
 
 .complete {
     list-style: none;
-}
+} */
 
 /* form.js */
 
-.form__choose {
+/* .form__choose {
     display: inline-block;
 }
 .form__select {
@@ -112,11 +130,56 @@ html, body {
 }
 .form__submit {
     margin-top: 1em;
-}
+} */
 
 /* mutation.js */
 
-.mutation__ul {
+/* .mutation__ul {
     margin-left: 2em;
     line-height: 1.4em;
+} */
+
+/* СТИЛИ ДЛЯ ГЛАВЫ 7 */
+
+.list {
+    list-style: none;
+}
+
+.list__item {
+    line-height: 2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 0.6em;
+    border-radius: 5px;
+    text-align: center;
+    background: lightsteelblue;
+}
+
+.list__item-hot {
+    background:tomato;
+}
+.list__item-fav {
+    background: url(../07/fav.svg) no-repeat right 10px center, lightgreen;
+    background-size: 5%;
+}
+.button {
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.buttonMain {
+    margin: 0.8em 25%;
+    width: 50%;
+}
+.newText {
+    line-height: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.component__parag {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0.6em;
+    padding: 0.4em;
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
 }
